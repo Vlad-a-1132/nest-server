@@ -1,10 +1,6 @@
 # compiled output
-/dist
 /build
 build/
-
-
-
 
 # Logs
 logs
