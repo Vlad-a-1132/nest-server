@@ -2,10 +2,9 @@
 /dist
 /build
 build/
-/node_modules
 
-.dev.env
-.prod.env
+
+
 
 # Logs
 logs
