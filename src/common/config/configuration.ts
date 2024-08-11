@@ -1,8 +1,15 @@
 import dotenv from 'dotenv'
 
-dotenv.config({
-    path: `${process.env.npm_config_local_prefix}/.${process.env.NODE_ENV}.env`
-})
+if (!process.env.NODE_ENV) {
+    dotenv.config({
+        path: `${process.env.npm_config_local_prefix}/.env`
+    })
+} else {
+    dotenv.config({
+        path: `${process.env.npm_config_local_prefix}/.${process.env.NODE_ENV}.env`
+    })
+}
+
 
 export interface ConfigSchema {
     port: number,
