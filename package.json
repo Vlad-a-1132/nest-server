@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "prebuild": "rimraf dist",
-    "start": "nest start",
+    "start": "nest start"
   },
   "dependencies": {
     "@nestjs/common": "^9.0.0",
